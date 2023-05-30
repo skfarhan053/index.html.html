@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .camera-repair {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff9f9;
+  border-radius: 3px;
+}
+
+.camera-repair h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.camera-repair label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.camera-repair form {
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-repair input, .camera-repair-form select, .camera-repair-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.camera-repair button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #8454ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.camera-repair button:hover {
+  background-color: #210456;
+  font-size: 25px;
+  font-style: italic;
+}
+
+    </style>
+</head>
+<body>
+    <div class="camera-repair">
+        <h2>Camera Repair Form</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="camera-brand">Camera Brand:</label>
+          <input type="text" id="camera-brand" name="camera-brand" required>
+          <label for="camera-model">Camera Model:</label>
+          <input type="text" id="camera-model" name="camera-model" required>
+          <label for="problem-description">Problem Description:</label>
+          <textarea id="problem-description" name="problem-description"></textarea>
+          <label for="pickup-date">Pickup Date:</label>
+          <input type="date" id="pickup-date" name="pickup-date" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+</body>
+</html>

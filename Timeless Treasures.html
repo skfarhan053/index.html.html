@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Trreasure.co.uk</title>
+    <link rel="website icon" href="website icon.jpg">
+</head>
+<style>
+    ul {
+        background-image: url(navigation\ background.webp);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 150px;
+        padding-right: 5%;
+        height: 60px;
+    }
+
+    ul li {
+        list-style: none;
+        margin-left: 50px;
+        margin-top: 27px;
+        font-size: 20px;
+        border-style: solid;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    ul li a {
+        color: #ffffff;
+        transition: 0.5s ease-in-out;
+        font-style: inherit;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+    }
+
+    ul li a:hover {
+        color: rgb(255, 251, 148);
+        font-family: monospace;
+        font-size: 20px;
+        transition: 0.8s ease-in-out;
+    }
+
+    .blog2 {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .slider {
+        width: 90%;
+        padding-left: 5%;
+        overflow: hidden;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slider img.active {
+        display: block;
+    }
+
+    .text1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: antiquewhite;
+    }
+
+    .offnow {
+        writing-mode: vertical-rl;
+        width: fit-content;
+        color: white;
+        background-color: black;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .one {
+        width: 100%;
+    }
+
+    .img01 {
+        height: 400px;
+        width: 70%;
+        padding-left: 15%;
+    }
+
+    .product-card {
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-style: groove;
+        border-radius: 5px;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .product-card img {
+        max-width: 100%;
+    }
+
+    .product-card h2 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .product-card .price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .product-card button {
+        background-color: #000000;
+        color: #fffafa;
+        border: none;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .product-card button:hover {
+        background-color: #ffd0d0;
+        color: rgb(2, 81, 91);
+        font-size: 15px;
+    }
+
+    .maincard {
+        display: flex;
+        display: flexbox;
+    }
+
+    .blog1 {
+        width: 90%;
+        padding-left: 5%;
+        height: 80%;
+    }
+    .card2 {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  max-width: 300px;
+  background-color: #fff;
+  color: #212121;
+  padding-left: 75%;
+}
+
+.image2 {
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgb(204, 0, 255);
+  background-image: linear-gradient(to right, rgb(255, 174, 0), rgb(204, 0, 255));
+}
+
+.content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.text-1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-2 {
+  margin-top: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-2 span:first-child {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.text-2 span:last-child {
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.date {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(156, 163, 175, 1);
+}
+.para {
+      animation-duration: 2s;
+      animation-name: slidein;
+      font-size: larger;
+      float: left;
+      padding-left: 2%;
+      padding-right: 5%;
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 50%;
+      }
+    }
+</style>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="sell ur watch.html">Sell</a></li>
+            <li><a href="repair form.html">Repair</a></li>
+            <li><a href="checkout.html">CheckOut</a></li>
+            <li><a href="About us.html">ABOUT</a></li>
+        </ul>
+    </div>
+    <div class="slider">
+        <img src="slide003.jpg" alt="Image 1">
+        <img src="slide2.jpg" alt="Image 2">
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slider")[0].getElementsByTagName("img");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+    <h1 class="text1">
+        Black Friday sale is live!
+    </h1>
+    <div class="maincard">
+        <div class="product-card">
+            <img src="watch5.jpg">
+            <p class="price">$1090.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="watch6.jpg">
+            <p class="price">$2000.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="watch7.jpg">
+            <p class="price">$1949.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="watch8.jpg">
+            <p class="price">$1699.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div>
+        <img class="blog1" src="blog001.png" alt="">
+    </div>
+    <h1 class="text1">
+        Vintage Series
+    </h1>
+    <div class="maincard">
+        <h2 class="offnow">
+            <span>10% OFF NOW</span>
+        </h2>
+        <div class="product-card">
+            <img src="watch1.jpg">
+            <p class="price">$550.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="watch2.jpg">
+            <p class="price">$1100.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="watch3.jpg">
+            <p class="price">$1249.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="watch4.jpg">
+            <p class="price">$699.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <p class="para">
+Vintage watches are highly sought-after not only for their timeless aesthetic appeal but also for their rarity and uniqueness. Each vintage watch is a testament to the skill and passion of the watchmaker who crafted it. These watches are not just simple accessories, but they are investments that hold their value over time.
+
+Owning a vintage watch is not just owning a piece of history, but it is also a way of expressing one's personal style. Vintage watches come in various styles, from dressy to sporty, and they can be paired with various outfits to make a statement. They are more than just watches; they are symbols of elegance, sophistication, and class.
+
+In today's world of fast fashion and disposable goods, vintage watches remind us of a time when quality and longevity were paramount. They are an ode to the golden era of watchmaking, a time when watchmakers poured their hearts and souls into every piece they crafted. Owning a vintage watch is not just owning a beautiful timepiece, but it is also owning a piece of history and preserving it for future generations to enjoy.
+    </p>
+    <div class="card2">
+        <div class="image2"></div>
+        <div class="content">
+          <p class="text-1">
+            Stay tuned!!
+          </p>
+      
+          <div class="text-2">
+            <span>
+              Get 35% off
+            </span>
+            <span>On your next order over $100</span>
+          </div>
+      
+          <a class="action" href="">
+            Get Discount
+          </a>
+      
+          <p class="date">
+            Offer valid until 29th May, 2023 *
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="container1">
+          <div class="row">
+            <div class="text1">
+              <p>&copy; 2023 Timeless Treasures
+                "We Buy We Sell Vintage Watches". All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <a href="" class="fa fa-facebook"></a>
+      <a href="" class="fa fa-twitter"></a>
+      <a href="" class="fa fa-instagram"></a>  
+</body>
+
+</html>

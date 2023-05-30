@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(navigation\ Background.jpg);
+            background-size: contain;
+        }
+        form{
+            color: whitesmoke;
+        }
+        h2{
+            color: white;
+        }
+        .ad {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.ad h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.ad form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ad input, .post-ad-form select, .post-ad-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.ad button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #8d1c35;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ad button:hover {
+  background-color: #2b08a7;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ad">
+        <h2>Post Your Ad</h2>
+        <form>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+            <option value="Timex">Timex</option>
+            <option value="Rolex">Rolex</option>
+            <option value="Hublot">Hublot</option>
+          </select>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" required>
+          <label for="image">Image:</label>
+          <input type="file" id="image" name="image">
+          <button type="submit">Post Ad</button>
+        </form>
+      </div>
+      
+</body>
+</html>
